@@ -6,15 +6,7 @@ body{
   background-color: #f3f6f9;
   height: 100vh;
 }
-.card-closed {
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-}
 
-.card-open {
-  max-height: fit-content;
-  opacity: 1;
-  transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
-}
 
 .recharts-surface{
   border-radius: 0.75rem;
@@ -37,4 +29,34 @@ body{
 
 ::selection{
   background-color: white;
+}
+
+
+/* Add these styles to your CSS file or style block */
+.fade-enter {
+  opacity: 0;
+  max-height: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  max-height: 500px; /* Adjust this value based on your content height */
+  transition: all 500ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+  max-height: 500px; /* Adjust this value based on your content height */
+}
+
+.fade-exit-active {
+  opacity: 0;
+  max-height: 0;
+  transition:0.3s ease-out;
+}
+
+.rr{
+  top: 66%;
+    left: 10%;
+    z-index: 100;
 }

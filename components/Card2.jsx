@@ -84,17 +84,20 @@ const Card2 = () => {
                     </a>
                 </li>
             </ul>
-            <div className="w-auto h-fit  rounded-xl bg-white sd">
+            <div className="w-auto h-fit  rounded-2xl bg-white sd">
                 <div className="flex justify-between">
-                    <p className="text-md font-medium pt-10 pl-8 ">
+                    <p className="text-sm font-medium pt-10 pl-8 ">
                         <i className="fa-solid fa-circle text-red-600 mr-2"></i><span className="text-text-gray-2">Lower: $4.895</span>
                     </p>
-                    <p className="text-md font-medium pt-10 pr-8">
+                    <p className="text-sm font-medium pt-10 pr-8">
                         <i className="fa-solid fa-circle text-green-600 mr-2"></i><span className="text-text-gray-2">Higher: $5.895</span>
                     </p>
 
                 </div>
-
+                <div className="text-md text-gray-600 font-bold flex items-center absolute gap-2 rr">
+                   <span className="text-5xl leading-0" style={{color: "#ffc843", marginTop: "-6px"}}>•</span>       
+                            1 BTC = $5.543
+                        </div>
                 <ResponsiveContainer width="100%" height={250}>
                     <AreaChart
                         data={activePageData}
@@ -102,11 +105,7 @@ const Card2 = () => {
                     >
                         <CartesianGrid strokeDasharray="1 100" />
                        
-                        <text x='10%'
-                            y='80%'
-                           className="text-lg text-black font-bold">
-                           <span className=" w-1 h-1 bg-red"></span> 1BTC = $5.543
-                        </text>
+                       
                         <ZAxis range={[30, 31]} />
                         <Tooltip />
                         <Area type="monotone" dataKey="uv" stroke="#ffc843" strokeWidth={4} fill="#ffeacd" dot={{ strokeWidth: 8, }} />
