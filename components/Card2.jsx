@@ -15,21 +15,30 @@ import { Day, Week, Month, Year } from '../Data/Modals.js'
 const gradientId = 'linearGradientId';
 const gradientDotId = 'radialGradientId';
 const GradientDot = (props) => {
-    const { cx, cy, fill } = props;
+    const { cx, cy } = props;
+    const strokeWidth = 4; // Adjust the stroke width as needed
+    const strokeColor = "rgb(252, 230, 176, 0.7)"; // The single color for the stroke
+  
     return (
-        <svg className="cdd">
-            <defs>
-
-                <linearGradient id={gradientDotId} x1="0%" x2="0%" y1="100%" y2="0%">
-                    <stop offset="0%" stop-color="rgb(255,200,67)" stop-opacity="1" />
-                    <stop offset="100%" stop-color="rgb(255,143,23)" stop-opacity="1" />
-                </linearGradient>
-            </defs>
-            <circle cx={cx} cy={cy} fill={`url(#${gradientDotId})`} r={8} />
-        </svg>
+      <svg className="cdd">
+        <defs>
+          <linearGradient id={`${gradientDotId}-gradient`} x1="0%" x2="100%" y1="0%" y2="100%">
+            <stop offset="0%" stopColor="rgb(255, 200, 67)" stopOpacity="1" />
+            <stop offset="100%" stopColor="rgb(255, 143, 23)" stopOpacity="1" />
+          </linearGradient>
+        </defs>
+        <circle
+          cx={cx}
+          cy={cy}
+          fill={`url(#${gradientDotId}-gradient)`}
+          stroke={strokeColor}
+          strokeWidth={strokeWidth}
+          r={8}
+        />
+      </svg>
     );
-};
-
+  };
+  
 
 const Card2 = () => {
 
@@ -114,7 +123,7 @@ const Card2 = () => {
 
                 </div>
                 <div className="text-md text-gray-600 font-bold flex items-center absolute gap-2 rr bottom-4 pl-8">
-                    <span className="text-5xl leading-0 rdf" style={{ color: "#ffc843", marginTop: "-6px" }}>•</span>
+                    <span className="text-5xl leading-0 rdf" style={{ color: "#ffc843"}}></span>
                     1 BTC = $5.543
                 </div>
                 <ResponsiveContainer width="100%" height={250}>
