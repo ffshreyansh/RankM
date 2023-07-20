@@ -84,7 +84,7 @@ const Card2 = () => {
                     </a>
                 </li>
             </ul>
-            <div className="w-auto h-fit  rounded-2xl bg-white sd">
+            <div className="w-auto h-fit relative  rounded-2xl bg-white sd">
                 <div className="flex justify-between">
                     <p className="text-sm font-medium pt-10 pl-8 ">
                         <i className="fa-solid fa-circle text-red-600 mr-2"></i><span className="text-text-gray-2">Lower: $4.895</span>
@@ -94,10 +94,10 @@ const Card2 = () => {
                     </p>
 
                 </div>
-                <div className="text-md text-gray-600 font-bold flex items-center absolute gap-2 rr">
-                   <span className="text-5xl leading-0" style={{color: "#ffc843", marginTop: "-6px"}}>•</span>       
-                            1 BTC = $5.543
-                        </div>
+                <div className="text-md text-gray-600 font-bold flex items-center absolute gap-2 rr bottom-4 pl-8">
+        <span className="text-5xl leading-0" style={{ color: "#ffc843", marginTop: "-6px" }}>•</span>
+        1 BTC = $5.543
+      </div>
                 <ResponsiveContainer width="100%" height={250}>
                     <AreaChart
                         data={activePageData}
