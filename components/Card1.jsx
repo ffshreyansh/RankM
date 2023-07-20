@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 const Card1 = () => {
-  const [hide, setHide] = useState(false);
+  const [hide, setHide] = useState(true);
 
   const showFull = () => {
     setHide(!hide);
@@ -13,7 +13,7 @@ const Card1 = () => {
     <div className={`w-auto h-fit p-8 sd rounded-2xl bg-white`}>
       <div className="flex items-center justify-between">
         <div className='flex gap-6 items-center'>
-          <img width={50} src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/800px-Bitcoin.svg.png" alt="btc image" />
+          <img width={50} src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/800px-Bitcoin.svg.png" className=' -rotate-12' alt="btc image" />
           <p className='font-semibold text-lg text-text-gray'>Bitcoin</p>
         </div>
         <p className='font-semibold text-gray-400'>BTC</p>
@@ -38,7 +38,7 @@ const Card1 = () => {
         </div>
       </CSSTransition>
       <button onClick={showFull} className='w-full text-3xl text-gray-400 mt-3 decoration-none '>
-        {hide ? (<i className="fa-solid fa-angle-up"></i>) : (<i className="fa-solid fa-angle-down"></i>)}
+      <i className="fa-solid fa-angle-down"></i>
       </button>
     </div>
   );

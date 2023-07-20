@@ -63,3 +63,13 @@ body{
 li:hover{
   color: black;
 }
+
+/* GradientDot.css */
+.cdd {
+  filter: drop-shadow(0px 0px 5px rgb(249, 179, 40, 1));
+}
+
+.rdf{
+  filter: drop-shadow(0px 0px 5px rgb(249, 179, 40, 1));
+  color: linear-gradient(0deg, rgb(255, 200, 67), rgb(255, 143, 23));
+}

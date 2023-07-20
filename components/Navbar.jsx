@@ -9,11 +9,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white py-4 px-7 text-3xl items-center text-gray-500">
+    <nav className="bg-white py-4 px-7 text-3xl items-center ">
       <div className="flex justify-between">
-        <i className="fa-solid fa-chevron-left h-fit my-auto text-xl"></i>
-        <p className="font-semibold">Bitcoin Wallet</p>
-        <i className="fa-solid fa-ellipsis-vertical h-fit my-auto text-2xl er cursor-pointer" onClick={toggleModal}></i>
+        <i className="fa-solid fa-chevron-left h-fit my-auto text-xl" style={{color: "#aeb8c4"}}></i>
+        <p className="font-semibold" style={{color: "#4c5968"}}>Bitcoin Wallet</p>
+        <i className="fa-solid fa-ellipsis-vertical h-fit my-auto text-2xl er cursor-pointer" style={{color: "#aeb8c4"}} onClick={toggleModal}></i>
 
         {showModal && (
           <div className="fixed inset-0 bg-opacity-50 bg-black flex items-start justify-end z-50" onClick={toggleModal}>
