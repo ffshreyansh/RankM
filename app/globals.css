@@ -2,26 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: #f3f6f9;
+  height: 100vh;
+}
+.card-closed {
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.card-open {
+  max-height: fit-content;
+  opacity: 1;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.recharts-surface{
+  border-radius: 0.75rem;
+}
+
+.pnk{
+  background-image: linear-gradient(#ff677c, #fb23a2);
+}
+.bgg{
+  background-image: linear-gradient(#1d72f1, #17c8fc);
+}
+
+.sd{
+  box-shadow: 0px 7px 38px -6px rgba(0,0,0,0.1);
+}
+
+.recharts-dot{
+  box-shadow: 0px 0px 0px 14px rgba(0,0,0,0.6);
 }
