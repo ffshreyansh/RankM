@@ -9,9 +9,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white py-7 px-7 text-3xl items-center text-gray-500">
+    <nav className="bg-white py-4 px-7 text-3xl items-center text-gray-500">
       <div className="flex justify-between">
-        <i className="fa-solid fa-chevron-left h-fit my-auto text-2xl"></i>
+        <i className="fa-solid fa-chevron-left h-fit my-auto text-xl"></i>
         <p className="font-semibold">Bitcoin Wallet</p>
         <i className="fa-solid fa-ellipsis-vertical h-fit my-auto text-2xl er" onClick={toggleModal}></i>
 

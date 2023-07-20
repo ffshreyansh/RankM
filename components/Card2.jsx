@@ -95,7 +95,7 @@ const Card2 = () => {
 
                 </div>
 
-                <ResponsiveContainer width="100%" height={300}>
+                <ResponsiveContainer width="100%" height={250}>
                     <AreaChart
                         data={activePageData}
                         margin={{ top: 20, left: 0, bottom: 0, right: 50 }}
