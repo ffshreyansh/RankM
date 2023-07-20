@@ -34,3 +34,7 @@ body{
 .recharts-dot{
   box-shadow: 0px 0px 0px 14px rgba(0,0,0,0.6);
 }
+
+::selection{
+  background-color: white;
+}

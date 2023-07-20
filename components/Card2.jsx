@@ -86,10 +86,10 @@ const Card2 = () => {
             </ul>
             <div className="w-auto h-fit  rounded-xl bg-white sd">
                 <div className="flex justify-between">
-                    <p className="text-lg font-medium pt-10 pl-8 ">
+                    <p className="text-md font-medium pt-10 pl-8 ">
                         <i className="fa-solid fa-circle text-red-600 mr-2"></i><span className="text-text-gray-2">Lower: $4.895</span>
                     </p>
-                    <p className="text-lg font-medium pt-10 pr-8">
+                    <p className="text-md font-medium pt-10 pr-8">
                         <i className="fa-solid fa-circle text-green-600 mr-2"></i><span className="text-text-gray-2">Higher: $5.895</span>
                     </p>
 
@@ -104,7 +104,7 @@ const Card2 = () => {
                        
                         <text x='10%'
                             y='80%'
-                           className="text-xl text-black font-bold">
+                           className="text-lg text-black font-bold">
                            <span className=" w-1 h-1 bg-red"></span> 1BTC = $5.543
                         </text>
                         <ZAxis range={[30, 31]} />
