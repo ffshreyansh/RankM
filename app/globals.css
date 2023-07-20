@@ -32,7 +32,6 @@ body{
 }
 
 
-/* Add these styles to your CSS file or style block */
 .fade-enter {
   opacity: 0;
   max-height: 0;
@@ -40,13 +39,13 @@ body{
 
 .fade-enter-active {
   opacity: 1;
-  max-height: 500px; /* Adjust this value based on your content height */
+  max-height: 500px; 
   transition: all 500ms ease-in-out;
 }
 
 .fade-exit {
   opacity: 1;
-  max-height: 500px; /* Adjust this value based on your content height */
+  max-height: 500px; 
 }
 
 .fade-exit-active {
